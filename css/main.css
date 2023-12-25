@@ -21,4 +21,33 @@
 
 body {
     background-color: black;
+    color: white;
+    font-family: kamerik-3d;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.layerss {
+    perspective: 1000px;
+}
+
+.__layers__container {
+height: 100vh;
+transform-style: preserve-3d;
+}
+
+.layers__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
 }
